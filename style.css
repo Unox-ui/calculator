@@ -34,7 +34,7 @@ h1{
     background-color: var(--calc);
     padding: 2vh;
     border-radius: 4px;
-
+    box-shadow: 5px 5px 6px black;
 }
 .display{
     grid-column-end:  span 4;

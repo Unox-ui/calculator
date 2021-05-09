@@ -106,9 +106,9 @@ function rickroll(){
     video.setAttribute('src', 'img/zerodivision.mp4');
     video.autoplay = true;
     video.loop = true;
-    btn.textContent='Never again.'
+    btn.textContent='OK. Never again.'
     btn.setAttribute('id', 'revert');
-    div2.textContent = "DO NOT DIVIDE BY 0!"
+    div2.textContent = "   DO NOT DIVIDE BY 0!"
     div.setAttribute('class', 'rick');
     div.setAttribute('id', 'roll');
     div.appendChild(div2);
