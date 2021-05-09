@@ -1,0 +1,115 @@
+:root{
+    --body: #dfe9f8;
+    --calc: rgb(60,65,94);
+    --text: rgb(21, 27, 59);
+    --button: rgba(74, 184, 217, 0.70);
+    --button-hover: rgb(74, 184, 217);
+    --display: rgb(135, 147, 214);
+    --clear: rgb(211, 32, 62);
+    --clear-hover: rgb(255, 0, 43);
+    --delete: rgba(109, 82, 209, 1);
+    --delete-hover: rgb(0, 119, 255);
+}
+
+body{
+    background-color: var(--body);
+}
+
+h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#calc{
+    display:flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    grid-template-rows: repeat(6, 50px);
+    gap: 5px;
+    background-color: var(--calc);
+    padding: 2vh;
+    border-radius: 4px;
+
+}
+.display{
+    grid-column-end:  span 4;
+    min-height: 50px;
+    background-color: var(--display);
+    border-radius: 4px;
+    border: solid 1px black;
+}
+
+.first-display{
+    text-align: end;
+    padding-right: 6px;
+    line-height: 30px;
+    height: 30px;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.second-display{
+    text-align: end;
+    padding-right: 20px;
+    line-height: 20px;
+    height: 20px;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+#clear{
+    grid-column-end: span 2;
+    background-color: var(--clear);
+}
+
+#clear:hover{
+    background-color: var(--clear-hover);
+}
+.rick{
+    display: flex;
+    z-index: 1000;
+    background-color: rgb(12, 12, 12);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    color: lightyellow;
+    font-size: 15px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.roll{
+    display:  block;
+    margin: auto;
+}
+
+#delete{
+    grid-column-end: span 2;
+    background-color: var(--delete);
+}
+
+#delete:hover{
+    background-color: var(--delete-hover);
+}
+
+button{
+    background-color: var(--button);
+    border-radius: 4px;
+    padding: 10px;
+    color:var(--text);
+    border: 0px;
+    font-size: 20px;
+}
+
+button:hover{
+    background-color: var(--button-hover);
+    cursor: pointer;
+}
